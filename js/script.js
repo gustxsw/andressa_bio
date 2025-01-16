@@ -13,12 +13,18 @@ window.addEventListener("load", () => {
     document.querySelector(".card").classList.add("fade-in");
 });
 
-// Formulário de Contato - Mensagem ao enviar
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        alert('Obrigado por entrar em contato! Responderemos em breve.');
+
+        // Adicione a mensagem de feedback
+        const feedbackElement = document.getElementById('form-feedback');
+        if (feedbackElement) {
+            feedbackElement.textContent = 'Obrigado por entrar em contato! Responderemos em breve.';
+        }
+
+        // Reseta o formulário
         contactForm.reset();
     });
 }
