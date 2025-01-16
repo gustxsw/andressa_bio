@@ -145,6 +145,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease;
+    margin-bottom: 20px;
 }
 
 .contact-form button:hover {
@@ -161,10 +162,24 @@ body {
 .footer {
     margin-top: 30px;
     font-size: 14px;
-    color: var(--secondary-color);
+    color: #000000; /* Deixa o texto branco */
     border-top: 1px solid #ddd;
     padding-top: 10px;
+    text-align: center;
 }
+
+.footer a {
+    color: #000000; /* Deixa o link preto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 14px; /* Ajusta o tamanho do texto */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--button-hover-color); /* Cor ao passar o mouse */
+}
+
 
 /* Design Responsivo */
 @media (max-width: 768px) {
