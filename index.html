@@ -39,7 +39,7 @@
 
             <nav class="links" aria-label="Links de navegação">
                 <a href="https://www.facebook.com/andressamariastore" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://w.app/andressamariastore" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="https://api. whatsapp.com/send?phone=5562984864009&text=Ol%C3%A1!" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 <a href="https://www.instagram.com/andressamariastore/" target="_blank" rel="noopener noreferrer">Instagram</a>
             </nav>
 
@@ -50,9 +50,13 @@
                     <input type="email" name="email" placeholder="Seu Email" required>
                     <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
                     <button type="submit">Enviar</button>
-                </form>
-                <div id="form-feedback" aria-live="polite" style="margin-top: 10px; color: green;"></div>
-            </section>
+                    <form id="contact-form" action="/enviar" method="post">
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu Email" required>
+                        <textarea name="message" placeholder="Sua Mensagem" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="form-feedback" aria-live="polite" style="margin-top: 10px; color: green;"></div>                    
             
 
             <footer class="footer">
