@@ -80,7 +80,10 @@ body {
 }
 
 .links a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     text-decoration: none;
     margin: 10px 0;
     padding: 14px 20px;
@@ -91,6 +94,11 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    font-size: 16px;
+}
+
+.links a i {
+    font-size: 18px;
 }
 
 .links a:hover {
@@ -157,7 +165,6 @@ body {
     transform: scale(0.98); /* Efeito de "clicado" */
 }
 
-
 /* Rodapé */
 .footer {
     margin-top: 30px;
@@ -179,7 +186,6 @@ body {
 .footer a:hover {
     color: var(--button-hover-color); /* Cor ao passar o mouse */
 }
-
 
 /* Design Responsivo */
 @media (max-width: 768px) {
